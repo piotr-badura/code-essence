@@ -20,57 +20,65 @@
 
     <body>
         
-        <div class="container">
+        <div id="header" class="container-fluid">
                         
-            <h1> <b> code-essence </b> - select project </h1>
+            <h1> <b> code-essence </b> </h1>
             
             <div id="main-menu">                
                 <div class="menu-block" style="background-color: none">                    
                     <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
                     <div class="title">
                         <h4> CODE-ESSENCE </h4>
+                        <p> latest project </p>
                     </div>
                 </div>
                 <div class="menu-block" style="background-color: none">
                     <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     <div class="title">
                         <h4> SEARCH </h4>
+                        <p> latest project </p>
                     </div>
                 </div>
                 <div class="menu-block" style="background-color: none">
                     <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
                     <div class="title">
                         <h4> CAMERA </h4>
+                        <p> latest project </p>
                     </div>
                 </div>
                 <div class="menu-block" style="background-color: none">
                     <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                     <div class="title">
                         <h4> ABOUT ME </h4>
+                        <p> latest project </p>
                     </div>
                 </div>                
                 <div class="menu-block" style="background-color: none; z-index: 1000; position: relative">
                     <span class="glyphicon glyphicon-film" aria-hidden="true"></span>
                     <div class="title">
                         <h4> ROSEMARY </h4>
+                        <p> latest project </p>
                     </div>
                 </div>
                 <div class="menu-block" style="background-color: none">
                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     <div class="title">
                         <h4> EDIT </h4>
+                        <p> latest project </p>
                     </div>
                 </div>
                 <div class="menu-block" style="background-color: none">
                     <span class="glyphicon glyphicon-music" aria-hidden="true"></span>
                     <div class="title">
                         <h4> MY MUSIC </h4>
+                        <p> latest project </p>
                     </div>
                 </div>
                 <div class="menu-block" style="background-color: none">
                     <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
                     <div class="title">
                         <h4> FILMS </h4>
+                        <p> latest project </p>
                     </div>
                     
                 </div>
