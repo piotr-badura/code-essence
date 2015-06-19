@@ -15,12 +15,26 @@ $(document).ready
                 var v = Math.floor(window.innerHeight/2);                                                
                 
                 $('.menu-block').not($(this)).addClass('unscaled')
-                $(this).addClass('scaled')
+                $(this).addClass('scaled');
+                
+                
+                $('.menu-tip').show()
             },
             function()
             {
                 $('.menu-block').not($(this)).removeClass('unscaled')
                 $(this).removeClass('scaled')                
+                $('.menu-tip').hide()
+            }
+        )
+
+        $('.menu-block').click
+        (
+            function()
+            {
+                // $('.menu-block').removeClass('scaled')
+                // $('.menu-block').removeClass('unscaled')
+                $('.menu-block.unscaled').toggleClass('m-hidden')
             }
         )
     }

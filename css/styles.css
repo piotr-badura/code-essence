@@ -1,14 +1,20 @@
 * {
-    transition: all ease-in 0.2s;   
+    font-family: 'Vollkorn', serif;
+    
+    transition: all ease-in 0.3s;   
 }
 
 body {    
 }
 
 .container {
-    margin-top: 150px;
+    margin-top: 100px;
     text-align: center;        
     
+}
+
+.container h1 {
+    margin-bottom: 50px;
 }
 
 #main-menu {
@@ -19,6 +25,7 @@ body {
 }
 
 .menu-block {
+    overflow: hidden;
     float: left;
     width: 130px;
     height: 130px;
@@ -33,11 +40,12 @@ border-radius: 200px;
 }
 
 .scaled {
+  transition: all ease-in 0.2s;
 -webkit-box-shadow: 0px 0px 66px -19px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 0px 66px -19px rgba(0,0,0,0.75);
 box-shadow: 0px 0px 66px -19px rgba(0,0,0,0.75);
     
--webkit-transform: rotate(0deg) translate(0px, 0px) scale(1.3);
+-webkit-transform: rotate(45deg) translate(0px, 0px) scale(1.3);
 -moz-transform: scale(1.4);
 -o-transform: scale(1.4);
 -ms-transform: scale(1.4);
@@ -45,11 +53,65 @@ box-shadow: 0px 0px 66px -19px rgba(0,0,0,0.75);
 -moz-transform: rotate(45deg) ;
 -o-transform: rotate(45deg) ;
 -ms-transform: rotate(45deg) ;
+border: 1px solid rgb(51, 51, 51);
 }
 
 .menu-block span {
-    font-size: 70px;
+    font-size: 50px;
 }
+
+.menu-block.scaled span {
+    -webkit-transform: translate(0px, -5px);
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.menu-block h5 {
+    color: #777;
+    opacity: 0;
+    font-weight: 100;
+    font-size: 8px;
+    margin-top: 35px;
+}
+
+.menu-block.scaled h5 {
+    margin-top: 20px;
+    transition: all ease-in 0.1s;   
+    transition-delay: 0.4s;
+    -webkit-transform: scale(1.4);
+    opacity: 1;    
+}
+
+.menu-block .title {
+    background-color: rgb(51, 51, 51);
+    padding: 0px 0px;
+    margin-top: 80px;
+    padding: 2px 0px;
+    height: 35px;
+}
+
+.menu-block.scaled .title {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.4s;
+    display: block;
+    margin-top: 5px;
+}
+
+.menu-block .title h4 {
+    margin-left: 150px;
+    color: white;
+    font-size: 9px;
+    font-weight: 100;
+    height: 9px;
+    overflow: hidden;
+}
+
+.menu-block.scaled .title h4 {
+    margin-left: 0px;
+    transition: all ease-in 0.2s;
+    transition-delay: 0.6s;    
+}
+
 
 .unscaled {
 transform: scale(0.7);
@@ -57,4 +119,9 @@ transform: scale(0.7);
 -moz-transform: scale(0.1);
 -o-transform: scale(0.9);
 -ms-transform: scale(0.9);    
+}
+
+.m-hidden {
+transform: scale(0);
+-webkit-transform: scale(0);
 }
