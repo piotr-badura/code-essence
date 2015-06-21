@@ -2,39 +2,77 @@ $(document).ready
 (
     function()
     {
-        $('.menu-block').hover
+        // carousel - start
+        
+        $('#ce-carousel').carousel
+        (
+            {
+                interval: 2000,
+                pause: 'hover',
+                wrap: true
+            }
+        );
+
+        $('#slider-header .ce-carousel-indicators li').click
         (
             function()
             {
-                var offset = $(this).offset()
-                var position = $(this).position()
+                var slide = $(this).data('slide-to')                
                 
-                console.log(offset)
+                $('#ce-carousel').carousel(slide);
                 
-                var h = Math.floor(window.innerWidth/2);
-                var v = Math.floor(window.innerHeight/2);                                                
-                
-                $('.menu-block').not($(this)).addClass('unscaled')
-                $(this).addClass('scaled');
-                
-                
-                $('.menu-tip').show()
-            },
-            function()
-            {
-                $('.menu-block').not($(this)).removeClass('unscaled')
-                $(this).removeClass('scaled')                
-                $('.menu-tip').hide()
+                $('ol.ce-carousel-indicators li.active').removeClass("active");
+                $(this).addClass("active");                
             }
         )
 
-        $('.menu-block').click
+        $('#ce-carousel').on
+        (
+            'slide.bs.carousel', 
+            function()
+            {
+                $holder = $( "ol.ce-carousel-indicators li.active" );
+                $holder.removeClass('active');
+                
+                var idx = $('#ce-carousel div.item.active').index('div.item');                
+                
+                $('ol.ce-carousel-indicators li[data-slide-to="'+ idx+'"]').addClass('active');                
+            }
+        )
+        
+        // carousel - end
+        
+        $('li.hb').hover
         (
             function()
             {
-                // $('.menu-block').removeClass('scaled')
-                // $('.menu-block').removeClass('unscaled')
-                $('.menu-block.unscaled').toggleClass('m-hidden')
+                $('li.hb').not($(this)).addClass('unhovered')
+                $(this).addClass('hovered');
+            },
+            function()
+            {
+                $('li.hb').not($(this)).removeClass('unhovered')
+                $(this).removeClass('hovered')
+            }
+        )
+        
+        $('li.hb').click
+        (
+            function()
+            {
+                $('li.hb.unhovered').toggleClass('collapsed')
+                $('li.hb').not($(this)).removeClass('unhovered')
+                $(this).removeClass('hovered')
+                $(this).addClass('active')
+                // $('#header').toggleClass('collapsed')
+            }
+        )
+
+        $('#header-button').click
+        (
+            function()
+            {
+                $('#header-xs').slideToggle()
             }
         )
     }
