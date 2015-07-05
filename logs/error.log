@@ -1,0 +1,42 @@
+2015-07-05 12:01:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/twitter/tweets.php?limit=20&visible_tweets=2&username=pixel_industry&time=false&replies=true&date_format=style1&animation=slide_up&position=append
+Stack Trace:
+#0 F:\wamp\www\_GIT\code-essence\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-05 12:06:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /js/twitter/tweets.php?limit=20&visible_tweets=2&username=pixel_industry&time=false&replies=true&date_format=style1&animation=slide_up&position=append
+Stack Trace:
+#0 F:\wamp\www\_GIT\code-essence\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-05 12:11:57 Error: Fatal Error (1): Class 'Configure' not found in [F:\wamp\www\_GIT\code-essence\src\Template\Pages\home.ctp, line 23]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-05 12:11:57 Error: [Cake\Error\FatalErrorException] Class 'Configure' not found
+Request URL: /
+Stack Trace:
+#0 F:\wamp\www\_GIT\code-essence\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'Configur...', 'F:\\wamp\\www\\_GI...', 23)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
