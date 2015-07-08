@@ -5068,3 +5068,16 @@ Stack Trace:
 #1 {main}
 
 
+2015-07-08 10:52:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class sites could not be found.
+Exception Attributes: array (
+  'class' => 'sites',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /home/gobadei2/domains/code-essence.pl/public_html/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
