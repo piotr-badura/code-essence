@@ -1,0 +1,77 @@
+.navbar-nav {
+    margin-top: 5px;
+}
+
+.navbar-nav > li > a {
+    font-weight: 400;
+}
+
+.navbar {
+    background: url('/images/navbar-background.png') center center no-repeat;
+    background-size: 100% 67px
+}
+
+.navbar-header {    
+    background-color: #f9fafb;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+.navbar-collapse {
+    background-color: #f9fafb;
+}
+
+.navbar-brand img {
+}
+
+.navbar-brand #h-logo div {
+    float: left;
+    text-align: center;
+    height: 67px;
+    border-bottom: 3px solid transparent;    
+}
+
+.navbar-brand #h-logo div h4 {
+    margin: 20px 20px;
+    text-align: center;    
+    font-family: 'Raleway', sans-serif;    
+    font-weight: 900;
+    font-size: 18px;
+    color: rgb(200, 70, 70);
+}
+
+.navbar-brand #h-logo div h4 span {
+    font-weight: 200;
+    color: #ccc;
+}
+
+.navbar-brand #h-logo .hl-left h4 {
+    color: #eee;
+}
+
+.navbar-brand #h-logo .hl-right h4 {
+    margin: 20px 0px;
+}
+
+.navbar-brand #h-logo .hl-first {
+    /*
+    padding: 0;
+    width: 20px;
+    background: transparent url('/images/ce-sq-first.png') center right;
+    background-repeat: no-repeat;
+    */
+}
+
+.navbar-brand #h-logo .hl-left {
+    border-bottom: 3px solid #9e2114;
+    padding-right: 20px;
+    background: rgb(231, 76, 60) url('/images/ce-sq-left-big.png') center right;
+    background-repeat: no-repeat;
+}
+
+.navbar-brand #h-logo .hl-right {
+    padding-left: 20px;
+}
