@@ -35,11 +35,11 @@
 }
 
 .navbar-brand #h-logo div h4 {
-    margin: 20px 20px;
-    text-align: center;    
+    margin: 0px 20px;
+    text-align: left;    
     font-family: 'Raleway', sans-serif;    
     font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(200, 70, 70);
 }
 
@@ -52,8 +52,12 @@
     color: #eee;
 }
 
+.navbar-brand #h-logo .hl-left img {
+    margin: 8px 20px;    
+}
+
 .navbar-brand #h-logo .hl-right h4 {
-    margin: 20px 0px;
+    margin: 0px 0px;
 }
 
 .navbar-brand #h-logo .hl-first {
@@ -67,11 +71,12 @@
 
 .navbar-brand #h-logo .hl-left {
     border-bottom: 3px solid #9e2114;
-    padding-right: 20px;
+    padding-right: 20px;    
     background: rgb(231, 76, 60) url('/images/ce-sq-left-big.png') center right;
     background-repeat: no-repeat;
 }
 
 .navbar-brand #h-logo .hl-right {
+    padding-top: 10px;
     padding-left: 20px;
 }

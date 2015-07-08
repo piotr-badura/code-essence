@@ -11,20 +11,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">                    
-                    
-                    <?php
-                        // <img alt="" src="images/ce-logo.png"> 
-                    ?>
+                <a class="navbar-brand" href="#">                                                            
                     
                     <div id="h-logo">
                         <div class="hl-first">
                         </div>
                         <div class="hl-left">
-                            <h4> CODE </h4>
+                            <img alt="" src="images/ce-logo.png">
                         </div>                    
                         
                         <div class="hl-right">
+                            <h4> CO<span>DE</span> </h4>
                             <h4> ES<span>SENCE</span> </h4>
                         </div>
                     </div>
