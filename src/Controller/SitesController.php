@@ -7,6 +7,5 @@ class SitesController extends AppController
 
     public function index()
     {
-        
     }
 }

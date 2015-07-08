@@ -18,38 +18,38 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300,100,200' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">	
-	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="screen">
-        <link rel="stylesheet" type="text/css" href="css/owl.theme.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen">
-	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css" media="screen">	
+	<link rel="stylesheet" type="text/css" href="/css/owl.carousel.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/css/owl.theme.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/jquery.bxslider.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/magnific-popup.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/animate.css" media="screen">
         
         <!-- REVOLUTION BANNER CSS SETTINGS -->
-	<link rel="stylesheet" type="text/css" href="css/settings.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="/css/settings.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" media="screen">
 	
-        <link rel="stylesheet" type="text/css" href="css/custom.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="/css/custom.css" media="screen">
         
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.migrate.js"></script>
-	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-	<script type="text/javascript" src="js/jquery.appear.js"></script>
-	<script type="text/javascript" src="js/jquery.countTo.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery.imagesloaded.min.js"></script>
-	<script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
-	<script type="text/javascript" src="js/plugins-scroll.js"></script>
-	<script type="text/javascript" src="js/waypoint.min.js"></script>
-	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.migrate.js"></script>
+	<script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="/js/jquery.countTo.js"></script>
+	<script type="text/javascript" src="/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/js/jquery.imagesloaded.min.js"></script>
+	<script type="text/javascript" src="/js/retina-1.1.0.min.js"></script>
+	<script type="text/javascript" src="/js/plugins-scroll.js"></script>
+	<script type="text/javascript" src="/js/waypoint.min.js"></script>
+	<script type="text/javascript" src="/js/jquery.stellar.min.js"></script>
 
         <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-        <script type="text/javascript" src="js/jquery.themepunch.plugins.min.js"></script>
-        <script type="text/javascript" src="js/jquery.themepunch.revolution.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="/js/jquery.themepunch.plugins.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.themepunch.revolution.min.js"></script>
+	<script type="text/javascript" src="/js/script.js"></script>
         
         <?= $this->fetch('meta') ?>
         <?= $this->fetch('css') ?>
@@ -77,7 +77,7 @@
 					<ul>	<!-- SLIDE  -->
 						<li data-transition="3dcurtain-horizontal" data-slotamount="7" data-masterspeed="500" >
 							<!-- MAIN IMAGE -->
-							<img src="upload/banners/slide1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+							<img src="/upload/banners/slide1.jpg"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 1 -->
@@ -123,7 +123,7 @@
 						<!-- SLIDE  -->
 						<li data-transition="zoomout" data-slotamount="7" data-masterspeed="1000" >
 							<!-- MAIN IMAGE -->
-							<img src="upload/banners/back5.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+							<img src="/upload/banners/back5.jpg"  alt="darkblurbg"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_bold_white skewfromrightshort customout"
@@ -168,7 +168,7 @@
 						<!-- SLIDE  -->
 						<li data-transition="curtain-1" data-slotamount="7" data-masterspeed="600" >
 							<!-- MAIN IMAGE -->
-							<img src="upload/banners/back6.jpg" style='background-color:#b2c4cc' alt=""  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+							<img src="/upload/banners/back6.jpg" style='background-color:#b2c4cc' alt=""  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 							<!-- LAYER NR. 1 -->
 							<div class="tp-caption large_bold_white skewfromrightshort customout"
@@ -221,13 +221,13 @@
 								data-endspeed="500"
 								data-endeasing="Power4.easeIn"
 								data-captionhidden="on"
-								style="z-index: 9"><img src="images/dev4.png" alt="">
+								style="z-index: 9"><img src="/images/dev4.png" alt="">
 							</div>
 						</li>
 						<!-- SLIDE  -->
 						<li data-transition="flyin" data-slotamount="7" data-masterspeed="800" >
 							<!-- MAIN IMAGE -->
-							<img src="upload/banners/back.jpg" style='background-color:#b2c4cc' alt=""  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+							<img src="/upload/banners/back.jpg" style='background-color:#b2c4cc' alt=""  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 							<!-- LAYERS -->
 
 							<!-- LAYER NR. 1 -->
@@ -241,7 +241,7 @@
 								data-endspeed="500"
 								data-endeasing="Power4.easeIn"
 								data-captionhidden="on"
-								style="z-index: 9"><img src="images/dev3.png" alt="">
+								style="z-index: 9"><img src="/images/dev3.png" alt="">
 							</div>
 
 							<!-- LAYER NR. 2 -->
@@ -416,9 +416,9 @@
           
 						<div class="item project-post">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img1.jpg">
+								<img alt="" src="/upload/portfolio/img1.jpg">
 								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
+									<a class="zoom" href="/upload/portfolio/img1.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
 								</div>
 							</div>
@@ -430,9 +430,9 @@
           
 						<div class="item project-post">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img2.jpg">
+								<img alt="" src="/upload/portfolio/img2.jpg">
 								<div class="hover-box">
-									<a class="zoom" href="upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
+									<a class="zoom" href="/upload/portfolio/img2.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
 								</div>
 							</div>
@@ -444,7 +444,7 @@
           
 						<div class="item project-post">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img3.jpg">
+								<img alt="" src="/upload/portfolio/img3.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img3.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
@@ -458,7 +458,7 @@
           
 						<div class="item project-post ">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img4.jpg">
+								<img alt="" src="/upload/portfolio/img4.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img4.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
@@ -472,7 +472,7 @@
           
 						<div class="item project-post">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img5.jpg">
+								<img alt="" src="/upload/portfolio/img5.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img5.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
@@ -486,7 +486,7 @@
           
 						<div class="item project-post">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img6.jpg">
+								<img alt="" src="/upload/portfolio/img6.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img6.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
@@ -500,7 +500,7 @@
           
 						<div class="item project-post">
 							<div class="project-gal">
-								<img alt="" src="upload/portfolio/img7.jpg">
+								<img alt="" src="/upload/portfolio/img7.jpg">
 								<div class="hover-box">
 									<a class="zoom" href="upload/portfolio/img7.jpg"><i class="fa fa-search-plus"></i></a>
 									<a class="link" href="single-project.html"><i class="fa fa-link"></i></a>
@@ -559,7 +559,7 @@
 						</div>
 						<div class="col-md-4">
 							<div class="image-place triggerAnimation animated" data-animate="slideInUp">
-								<img src="images/dev1.png" alt="">
+								<img src="/images/dev1.png" alt="">
 							</div>
 						</div>
 						<div class="col-md-4">
@@ -651,7 +651,7 @@
 					<div id="owl-demo2" class="owl-carousel owl-theme">
           
 						<div class="item blog-post">
-							<img alt="" src="upload/blog/blog1.jpg">
+							<img alt="" src="/upload/blog/blog1.jpg">
 							<div class="post-content">
 								<div class="post-date">
 									<p><span>22</span>apr</p>
@@ -664,7 +664,7 @@
 						</div>
           
 						<div class="item blog-post">
-							<img alt="" src="upload/blog/blog2.jpg">
+							<img alt="" src="/upload/blog/blog2.jpg">
 							<div class="post-content">
 								<div class="post-date">
 									<p><span>18</span>apr</p>
@@ -677,7 +677,7 @@
 						</div>
           
 						<div class="item blog-post">
-							<img alt="" src="upload/blog/blog3.jpg">
+							<img alt="" src="/upload/blog/blog3.jpg">
 							<div class="post-content">
 								<div class="post-date">
 									<p><span>05</span>apr</p>
@@ -690,7 +690,7 @@
 						</div>
           
 						<div class="item blog-post">
-							<img alt="" src="upload/blog/blog2.jpg">
+							<img alt="" src="/upload/blog/blog2.jpg">
 							<div class="post-content">
 								<div class="post-date">
 									<p><span>17</span>apr</p>
@@ -703,7 +703,7 @@
 						</div>
           
 						<div class="item blog-post">
-							<img alt="" src="upload/blog/blog1.jpg">
+							<img alt="" src="/upload/blog/blog1.jpg">
 							<div class="post-content">
 								<div class="post-date">
 									<p><span>29</span>apr</p>
@@ -716,7 +716,7 @@
 						</div>
           
 						<div class="item blog-post">
-							<img alt="" src="upload/blog/blog3.jpg">
+							<img alt="" src="/upload/blog/blog3.jpg">
 							<div class="post-content">
 								<div class="post-date">
 									<p><span>06</span>apr</p>
@@ -750,22 +750,22 @@
 					<ul class="bxslider">
 						<li>
 							<ul class="client-list">
-								<li><a href="#"><img alt="" src="images/client1.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client2.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client3.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client4.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client5.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client6.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client1.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client2.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client3.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client4.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client5.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client6.png"></a></li>
 							</ul>
 						</li>
 						<li>
 							<ul class="client-list">
-								<li><a href="#"><img alt="" src="images/client1.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client2.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client3.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client4.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client5.png"></a></li>
-								<li><a href="#"><img alt="" src="images/client6.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client1.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client2.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client3.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client4.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client5.png"></a></li>
+								<li><a href="#"><img alt="" src="/images/client6.png"></a></li>
 							</ul>
 						</li>
 					</ul>
