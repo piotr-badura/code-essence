@@ -1,0 +1,20 @@
+msgid "navigation.home"
+msgstr "home"
+
+msgid "navigation.about"
+msgstr "about"
+
+msgid "navigation.projects"
+msgstr "projects"
+
+msgid "navigation.portfolio"
+msgstr "portfolio"
+
+msgid "navigation.blog"
+msgstr "blog"
+
+msgid "navigation.contact"
+msgstr "contact"
+
+msgid "revolution.slide.1.text"
+msgstr "We create"

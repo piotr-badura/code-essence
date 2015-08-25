@@ -1,82 +1,58 @@
-.navbar-nav {
-    margin-top: 5px;
+.logo-row {
+    width: 260px;
 }
 
-.navbar-nav > li > a {
-    font-weight: 400;
+.affix.black-header .header-wrapper {
+    background: #000000;
 }
 
-.navbar {
-    background: url('/images/navbar-background.png') center center no-repeat;
-    background-size: 100% 67px
+.black-header .header-wrapper {
+    background: #000000;
 }
 
-.navbar-header {    
-    background-color: #f9fafb;
+.footer2-black {
+    background: #000000;
 }
 
-.navbar-brand {
-    padding-top: 0px;
-    padding-bottom: 0px
+.rs-fullscr-container {
+    background-color: #000;
 }
 
-.navbar-collapse {
-    background-color: #f9fafb;
+#main-menu .navbar .nav > li.li-menu-flag > a {
+    padding: 28px 3px;
 }
 
-.navbar-brand img {
+.affix.header-1 #main-menu .navbar .nav > li.li-menu-flag > a {
+    padding: 10px 3px;
 }
 
-.navbar-brand #h-logo div {
-    float: left;
-    text-align: center;
-    height: 67px;
-    border-bottom: 3px solid transparent;    
+.logo-footer {
+    max-width: 90px;
 }
 
-.navbar-brand #h-logo div h4 {
-    margin: 0px 20px;
-    text-align: left;    
-    font-family: 'Raleway', sans-serif;    
-    font-weight: 900;
-    font-size: 20px;
-    color: rgb(200, 70, 70);
-}
-
-.navbar-brand #h-logo div h4 span {
-    font-weight: 200;
-    color: #ccc;
-}
-
-.navbar-brand #h-logo .hl-left h4 {
-    color: #eee;
-}
-
-.navbar-brand #h-logo .hl-left img {
-    margin: 8px 20px;    
-}
-
-.navbar-brand #h-logo .hl-right h4 {
-    margin: 0px 0px;
-}
-
-.navbar-brand #h-logo .hl-first {
-    /*
+ul#footer-images {
+    margin: 0;
     padding: 0;
-    width: 20px;
-    background: transparent url('/images/ce-sq-first.png') center right;
-    background-repeat: no-repeat;
-    */
 }
 
-.navbar-brand #h-logo .hl-left {
-    border-bottom: 3px solid #9e2114;
-    padding-right: 20px;    
-    background: rgb(231, 76, 60) url('/images/ce-sq-left-big.png') center right;
-    background-repeat: no-repeat;
+ul#footer-images li {
+    display: inline-block;
+    float: left;    
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
-.navbar-brand #h-logo .hl-right {
-    padding-top: 10px;
-    padding-left: 20px;
+ul#footer-images li a, ul#footer-images li a img {
+    display: block;
+    height: 75px;
+    width: 75px;
+}
+
+#contactError {
+    margin-top: 15px;
+    margin-bottom: 0;
+    border: none;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 }

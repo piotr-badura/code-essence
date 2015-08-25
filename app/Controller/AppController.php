@@ -30,5 +30,35 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-class AppController extends Controller {
+class AppController extends Controller
+{
+    public $umyconfig;
+    public $ucontroller = '';
+    public $uaction = '';
+    public $uelements = array();    
+    
+    public function beforeFilter()
+    {
+        $this->layout = 'coming';
+        
+        $umyconfig = Configure::read('umyconfig');
+        $this->umyconfig = $umyconfig;
+        
+        $request = $this->request->params;
+        $ucontroller = $request['controller'];
+        $uaction = $request['action'];
+        
+        // Configure::write('Config.language', 'POL');
+        
+        $uelements = array
+        (
+            'request' => $request
+        );
+        
+        $this->uelements = $uelements;
+        $this->ucontroller = $ucontroller;
+        $this->uaction = $uaction;
+        
+        $this->set(compact('uelements', 'ucontroller', 'uaction', 'umyconfig'));
+    }
 }

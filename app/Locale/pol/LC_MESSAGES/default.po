@@ -1,0 +1,2 @@
+msgid "revolution.slide.1.text"
+msgstr "Tworzymy"

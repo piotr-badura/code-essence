@@ -112,3 +112,18 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+// custom config file
+
+$umyconfig = array
+(
+    'company.name' => 'code essence',
+    'company.phone' => '(+48) 515-483-657',
+    'company.mail' => 'biuro@code-essence.pl',
+    'address.street' => 'Pionierów 1D/17',
+    'address.zip' => '47-220',
+    'address.city' => 'Kędzierzyn-Koźle',
+    'address.country' => 'Polska',
+);
+
+Configure::write('umyconfig', $umyconfig);

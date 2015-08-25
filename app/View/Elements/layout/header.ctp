@@ -1,80 +1,166 @@
-<!-- Header
-    ================================================== -->
-<header class="clearfix">
+<?php
+    $class = '';
+    $logo = 'ce-logo';
     
-    <!-- Static navbar -->
-    <div class="navbar navbar-default navbar-fixed-top">			
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">                                                            
-                    
-                    <div id="h-logo">
-                        <div class="hl-first">
-                        </div>
-                        <div class="hl-left">
-                            <img alt="" src="images/ce-logo.png">
-                        </div>                    
-                        
-                        <div class="hl-right">
-                            <h4> CO<span>DE</span> </h4>
-                            <h4> ES<span>SENCE</span> </h4>
-                        </div>
-                    </div>
-                    
-                </a>
-            </div>
-            <div class="navbar-collapse collapse">
+    $current = $ucontroller . '-' . $uaction;
+    
+    $menus = array
+    (
+        __('navigation.home') => array
+        (
+            'controller' => 'home',
+            'url' => '/',
+            'submenu' => false
+        ),
+        __('navigation.about') => array
+        (
+            'controller' => 'about',
+            'url' => '/about',
+        ),
+        __('navigation.projects') => array
+        (
+            'controller' => 'projects',
+            'url' => '/projects',
+        ),
+        __('navigation.portfolio') => array
+        (
+            'controller' => 'portfolio',
+            'url' => '/portfolio',
+        ),
+        __('navigation.blog') => array
+        (
+            'controller' => 'blog',
+            'url' => '/blog',
+        ),
+        __('navigation.contact') => array
+        (
+            'controller' => 'contact',
+            'url' => '/contact',
+        )
+    );
+    
+    switch ($current)
+    {
+        case 'home-index':
+        {
+            $class = 'header header-1 black-header';
+            $logo = 'ce-logo';
+            break;
+        }
+        default:
+        {
+            $class = 'header header-1 no-transparent mobile-no-transparent affix-top';
+            $logo = 'ce-logo-black';
+            break;
+        }
+    }
+?>
+
+<!-- HEADER -->
+<header id="nav" class="<?php echo $class ?>">
+    <div class="header-wrapper">
+        
+        <div class="container-m-30 clearfix">
+            <div class="logo-row">
                 
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="active" href="index.html">Home</a>
-                        <?php
-                        /*
-                        <ul class="drop-down">
-                            <li><a href="index.html">Home - Default</a></li>
-                            <li><a href="home2.html">Home 2</a></li>
-                            <li><a href="home3.html">Home 3</a></li>
-                            <li><a href="home4.html">Home 4</a></li>
-                            <li><a href="home5.html">Home 5</a></li>
-                        </ul>
-                        */
-                        ?>
-                    </li>
-                    <li>
-                        <a href="#">Features</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-                    <?php
-                    /*
-                    <li class="drop">
-                        <a href="#" class="open-search"><i class="fa fa-search"></i></a>
-                        <form class="form-search">
-                            <input type="search" placeholder="Search:"/>
-                            <button type="submit">
-                                    <i class="fa fa-search"></i>
-                            </button>
-                        </form>
-                    </li>
-                    */
-                    ?>
-                </ul>
+                <!-- LOGO -->
+                <div class="logo-container-2">
+                    <div class="logo-2">
+                        <a href="/" class="clearfix">
+                            <img src="/images/logo/<?php echo $logo; ?>.png" class="logo-img" alt="logo" />
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- BUTTON -->
+                <div class="menu-btn-respons-container">
+                    <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target="#main-menu .navbar-collapse">
+                        <span aria-hidden="true" class="icon_menu hamb-mob-icon"></span>
+                    </button>
+                </div>
                 
             </div>
         </div>
+        
+        <!-- MAIN MENU CONTAINER -->
+        <div class="main-menu-container">
+            <div class="container-m-30 clearfix">
+                
+                <!-- MAIN MENU -->
+                <div id="main-menu">
+                    <div class="navbar navbar-default" role="navigation">
+                        
+                        <!-- MAIN MENU LIST -->
+                        <nav class="collapse collapsing navbar-collapse right-1024">
+                            <ul class="nav navbar-nav">
+                                
+                                <?php
+                                    foreach ($menus as $key => $value)
+                                    {
+                                        $class = '';
+                                        
+                                        if ($value['controller'] == $ucontroller)
+                                        {
+                                            $class = 'current';
+                                        }
+                                ?>
+                                
+                                <!-- MENU ITEM -->
+                                <li class="<?php echo $class ?>">
+                                    <a href="<?php echo $value['url'] ?>">
+                                        <div class="main-menu-title"> <?php echo strtoupper($key) ?> </div>
+                                    </a>
+                                </li>
+                                
+                                <?php
+                                    }
+                                ?>
+                                
+                                <?php
+                                    /*
+                                <!-- MENU ITEM -->
+                                <li class="li-menu-flag">
+                                    <a href="/">
+                                        <div class="main-menu-title"> 
+                                            <img src="/app/webroot/images/flags/pl.png" style="height: 38px" /> 
+                                            <?php
+                                                // <img src="/app/webroot/images/flags/eng.png" style="width: 38px" /> 
+                                            ?>
+                                        </div>
+                                    </a>
+                                </li> 
+                                     */                               
+                                ?>
+                                
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+                <!-- END main-menu -->
+
+            </div>
+            <!-- END container-m-30 -->
+
+        </div>
+        <!-- END main-menu-container -->
+
+        <?php
+            /*                    
+
+        <!-- SEARCH READ DOCUMENTATION -->
+        <ul class="cd-header-buttons">
+                <li><a class="cd-search-trigger" href="#cd-search"><span></span></a></li>
+        </ul> <!-- cd-header-buttons -->
+
+        <div id="cd-search" class="cd-search">
+                <form class="form-search" id="searchForm" action="http://abcgomel.ru/haswell-1.5-demo/page-search-results.html" method="get">
+                        <input type="text" value="" name="q" id="q" placeholder="Search...">
+                </form>
+        </div>
+             */
+        ?>
+
     </div>
-    
+    <!-- END header-wrapper -->
 </header>
-<!-- End Header -->
