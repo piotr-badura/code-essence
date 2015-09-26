@@ -3,7 +3,7 @@
 ?>
 
 <?php
-    echo $this->element('/layout/breadcrumbs');
+    echo $this->element('/layout/breadcrumbs', array('title' => __('static.contact.breadcrumb')));
 ?>
 
 <?php

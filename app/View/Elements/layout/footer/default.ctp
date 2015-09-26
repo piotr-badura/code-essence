@@ -1,13 +1,13 @@
 <?php
-    $class = '';
-    $logo = 'ce-logo-b-simple.png';
-
+    $class = 'footer2-black';
+    $logo = 'ce-logo-w-simple.png';
+    
     if (isset($version))
     {
-        if ($version !== 'white')
+        if ($version == 'white')
         {
-            $class = 'footer2-black';
-            $logo = 'ce-logo-w-simple.png';
+            $class = '';
+            $logo = 'ce-logo-b-simple.png';
         }
     }
 ?>
@@ -85,8 +85,8 @@
                         {
                     ?>
                     <li>
-                        <a class="lightbox" rel="colorbox" href="http://farm9.staticflickr.com/8345/8284272962_9acc1cdddc.jpg" title="Squirrel">
-                            <img src="http://farm9.staticflickr.com/8348/8283192651_5555855060_s.jpg" alt="Squirrel">
+                        <a class="lightbox" rel="colorbox" href="/images/img/job/01/normal.png" title="">
+                            <img src="/images/img/job/01/thumb.png" alt="">
                         </a>
                     </li>
                     <?php

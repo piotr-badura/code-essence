@@ -71,23 +71,23 @@
                     
                     <!-- CONTACT FORM -->
                     <div class="">
-                        <form id="contact-form" action="" method="POST">
+                        <form id="contact-form" action="/contact/send" method="POST">
                             
                             <div class="row">
                                 <div class="col-md-12 mb-30">
-                                    <input type="text" value="" data-msg-required="<?php echo strtoupper(__('static.contact.form.required.name')); ?>" maxlength="100" class="form-control" name="name" id="name" placeholder="<?php echo strtoupper(__('static.contact.form.input.name')); ?>" required>
+                                    <input type="text" value="" data-msg-required="<?php echo strtoupper(__('static.contact.form.required.name')); ?>" maxlength="100" class="form-control" name="data[Contact][name]" id="contact-name" placeholder="<?php echo strtoupper(__('static.contact.form.input.name')); ?>" required>
                                 </div>
                             </div>
 
                             <div class="row">    
                                 <div class="col-md-12 mb-30">
-                                    <input type="email" value="" data-msg-required="<?php echo strtoupper(__('static.contact.form.required.email')); ?>" data-msg-email="<?php echo strtoupper(__('static.contact.form.valid.email')); ?>" maxlength="100" class="form-control" name="email" id="email" placeholder="<?php echo strtoupper(__('static.contact.form.input.email')); ?>" required>
+                                    <input type="email" value="" data-msg-required="<?php echo strtoupper(__('static.contact.form.required.email')); ?>" data-msg-email="<?php echo strtoupper(__('static.contact.form.valid.email')); ?>" maxlength="100" class="form-control" name="data[Contact][email]" id="contact-email" placeholder="<?php echo strtoupper(__('static.contact.form.input.email')); ?>" required>
                                 </div>
                             </div>
                             
                             <div class="row">
                                 <div class="col-md-12 mb-40">
-                                    <textarea maxlength="5000" data-msg-required="<?php echo strtoupper(__('static.contact.form.required.message')); ?>" rows="3" class="form-control" name="message" id="message" placeholder="<?php echo strtoupper(__('static.contact.form.input.message')); ?>" required></textarea>
+                                    <textarea maxlength="5000" data-msg-required="<?php echo strtoupper(__('static.contact.form.required.message')); ?>" rows="3" class="form-control" name="data[Contact][message]" id="contact-message" placeholder="<?php echo strtoupper(__('static.contact.form.input.message')); ?>" required></textarea>
                                 </div>
                             </div>
 

@@ -12,10 +12,10 @@
             'url' => '/',
             'submenu' => false
         ),
-        __('navigation.about') => array
+        __('navigation.services') => array
         (
-            'controller' => 'about',
-            'url' => '/about',
+            'controller' => 'services',
+            'url' => '/services',
         ),
         __('navigation.projects') => array
         (
@@ -117,20 +117,19 @@
                                 ?>
                                 
                                 <?php
-                                    /*
+                                    $langs = array('pol' => '', 'eng' => '');
+                                    $langs[$ulanguage] = 'flag-active';
+                                ?>
+                                
                                 <!-- MENU ITEM -->
-                                <li class="li-menu-flag">
+                                <li class="li-menu-flag">          
                                     <a href="/">
                                         <div class="main-menu-title"> 
-                                            <img src="/app/webroot/images/flags/pl.png" style="height: 38px" /> 
-                                            <?php
-                                                // <img src="/app/webroot/images/flags/eng.png" style="width: 38px" /> 
-                                            ?>
+                                            <img data-lang="pol" class="<?php echo $langs['pol'] ?>" src="/app/webroot/images/flags/pl.png" />
+                                            <img data-lang="eng" class="<?php echo $langs['eng'] ?>" src="/app/webroot/images/flags/eng.png" />
                                         </div>
                                     </a>
                                 </li> 
-                                     */                               
-                                ?>
                                 
                             </ul>
                         </nav>

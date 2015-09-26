@@ -1,2 +1,27 @@
+msgid "navigation.home"
+msgstr "home"
+
+msgid "navigation.services"
+msgstr "uslugi"
+
+msgid "navigation.projects"
+msgstr "projekty"
+
+msgid "navigation.portfolio"
+msgstr "portfolio"
+
+msgid "navigation.blog"
+msgstr "blog"
+
+msgid "navigation.contact"
+msgstr "kontakt"
+
 msgid "revolution.slide.1.text"
 msgstr "Tworzymy"
+
+msgid "footer.about.text"
+msgstr "Firma stawia na jakość, dzięki długoletniemu doświadczeniu głęboko wierzę, że nie ma rzeczy niemożliwych, Firma stawia na jakość, dzięki długoletniemu doświadczeniu głęboko wierzę, że nie ma rzeczy niemożliwych"
+
+msgid "footer.header.realizations"
+msgstr "REALIZACJE"
+

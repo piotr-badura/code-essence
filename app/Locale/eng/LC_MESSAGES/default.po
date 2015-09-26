@@ -1,8 +1,8 @@
 msgid "navigation.home"
 msgstr "home"
 
-msgid "navigation.about"
-msgstr "about"
+msgid "navigation.services"
+msgstr "services"
 
 msgid "navigation.projects"
 msgstr "projects"

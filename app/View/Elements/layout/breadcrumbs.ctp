@@ -4,7 +4,10 @@
         <div class="row">
             
             <div class="col-md-8">
-                <h1 class="page-title"> <?php echo __('static.contact.breadcrumb'); ?> </h1>
+                <h1 class="page-title"> <?php if (isset($title)) { echo $title; } ?> </h1>
+                <div class="page-sub-title">
+                    <?php if (isset($subtitle)) { echo $subtitle; } ?>
+                </div>
             </div>
             
             <div class="col-md-4">

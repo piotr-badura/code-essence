@@ -35,20 +35,19 @@ class AppController extends Controller
     public $umyconfig;
     public $ucontroller = '';
     public $uaction = '';
+    public $ulanguage = 'pol';
     public $uelements = array();    
+
+    public $uses = array();
     
     public function beforeFilter()
     {
-        $this->layout = 'coming';
-        
         $umyconfig = Configure::read('umyconfig');
         $this->umyconfig = $umyconfig;
         
         $request = $this->request->params;
         $ucontroller = $request['controller'];
-        $uaction = $request['action'];
-        
-        // Configure::write('Config.language', 'POL');
+        $uaction = $request['action'];                
         
         $uelements = array
         (
@@ -59,6 +58,17 @@ class AppController extends Controller
         $this->ucontroller = $ucontroller;
         $this->uaction = $uaction;
         
-        $this->set(compact('uelements', 'ucontroller', 'uaction', 'umyconfig'));
+        if (!$this->Session->check('ce.language'))
+        {
+            $this->Session->write('ce.language', 'pol');
+        }
+        
+        $ulanguage = $this->Session->read('ce.language');                
+        
+        $this->ulanguage = $ulanguage;
+        
+        Configure::write('Config.language', $ulanguage);
+        
+        $this->set(compact('uelements', 'ucontroller', 'uaction', 'umyconfig', 'ulanguage'));
     }
 }

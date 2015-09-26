@@ -27,6 +27,9 @@
 
 <!-- MAIN SCRIPT -->
 <script src="js/main.js"></script>
+
+<!-- CUSTOM -->
+<script type="text/javascript" src="/js/custom.js"></script>
 		
 <!-- REVOSLIDER SCRIPTS  -->
 <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
