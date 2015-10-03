@@ -12,7 +12,7 @@ $(document).ready
             }
         )
         
-        $('.li-menu-flag a img').click
+        $('.li-menu-flag a span.span-lang').click
         (
             function(e)
             {

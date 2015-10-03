@@ -63,7 +63,7 @@
                                     data-splitout="none"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"> Kocham to co robię i każdego dnia <br /> pragnę umieć więcej
+                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"> Kocham to co robię i każdego dnia <br /> pragnę poszerzać horyzonty
                             </div>
                             
                             <!-- LAYER NR. 3 LINE -->
@@ -92,8 +92,9 @@
                                     data-splitout="none"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="">                                         
-                                        <a class="button medium gray hover-dark tp-button" href="/"> o firmie </a>
+                                    style="">                                                                                 
+                                        <a class="button medium gray hover-dark tp-button smooth-scroll" href="#about"> o firmie </a>
+                                        <a class="button medium thin hover-dark tp-button ml-20 smooth-scroll" href="#why-us"> dlaczego c-e </a>
                             </div>
                     </div>
                     
@@ -191,8 +192,8 @@
                                     data-endelementdelay="0.1"
                                     style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap"> 
                                 
-                                    <a class="button medium gray tp-button" href="/"> opinie </a>
-                                    <a class="button medium thin hover-dark hide-479-736 tp-button ml-20" href="/"> realizacje </a>
+                                    <a class="button medium gray tp-button smooth-scroll" href="#recomendations"> opinie </a>
+                                    <a class="button medium thin hover-dark hide-479-736 tp-button ml-20" href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'portfolio', 'action' => 'index')) ?>"> realizacje </a>
                                 
                             </div>
                     </div>
@@ -291,7 +292,7 @@
                                     data-endelementdelay="0.1"
                                     style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap"> 
                                 
-                                        <a class="button medium thin tp-button hover-dark" href="/"> Kontakt </a>                                        
+                                <a class="button medium thin tp-button hover-dark" href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'contact', 'action' => 'index')) ?>"> Kontakt </a>                                        
                                 
                             </div>
                     </div>

@@ -125,8 +125,10 @@
                                 <li class="li-menu-flag">          
                                     <a href="/">
                                         <div class="main-menu-title"> 
-                                            <img data-lang="pol" class="<?php echo $langs['pol'] ?>" src="/app/webroot/images/flags/pl.png" />
-                                            <img data-lang="eng" class="<?php echo $langs['eng'] ?>" src="/app/webroot/images/flags/eng.png" />
+                                            <span data-lang="pol" class="span-lang <?php echo $langs['pol'] ?>"> PL </span>
+                                            <span> | </span>
+                                            <span data-lang="eng" class="span-lang <?php echo $langs['eng'] ?>"> EN </span>
+                                            <div class="clearfix"></div>                                                
                                         </div>
                                     </a>
                                 </li> 

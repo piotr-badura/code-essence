@@ -81,7 +81,7 @@
                 <ul id="footer-images" class="popup-gallery clearfix mb-30">
                     
                     <?php
-                        for ($i = 0; $i < 6; $i++)
+                        for ($i = 0; $i < 1; $i++)
                         {
                     ?>
                     <li>

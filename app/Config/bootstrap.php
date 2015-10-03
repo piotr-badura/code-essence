@@ -118,7 +118,7 @@ CakeLog::config('error', array(
 $umyconfig = array
 (
     'company.name' => 'code essence',
-    'company.phone' => '(+48) 515-483-657',
+    'company.phone' => '(+48) 531-030-326',
     'company.mail' => 'biuro@code-essence.pl',
     'address.street' => 'Pionierów 1D/17',
     'address.zip' => '47-220',
