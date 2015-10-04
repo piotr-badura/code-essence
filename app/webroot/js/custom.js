@@ -67,5 +67,17 @@ $(document).ready
                 event.preventDefault()
             }
         )
+
+        /*
+        $('a.ce-smooth-scroll[href^="#"]').on
+        (
+            "click", 
+            function(e)
+            {
+                var t = $($(this).attr("href")); 
+                t.length && (e.preventDefault(), $("html, body").animate({ scrollTop: t.offset().top - 60 }, 600))
+            }
+        );
+        */
     }
 )

@@ -83,6 +83,7 @@
                     <?php
                         for ($i = 0; $i < 1; $i++)
                         {
+                            /*
                     ?>
                     <li>
                         <a class="lightbox" rel="colorbox" href="/images/img/job/01/normal.png" title="">
@@ -90,8 +91,10 @@
                         </a>
                     </li>
                     <?php
+                            */
                         }
                     ?>
+                    <li> W trakcie... </li>
                 </ul>
             </div>            
             

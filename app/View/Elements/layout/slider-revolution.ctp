@@ -94,7 +94,7 @@
                                     data-endelementdelay="0.1"
                                     style="">                                                                                 
                                         <a class="button medium gray hover-dark tp-button smooth-scroll" href="#about"> o firmie </a>
-                                        <a class="button medium thin hover-dark tp-button ml-20 smooth-scroll" href="#why-us"> dlaczego c-e </a>
+                                        <a class="button medium thin hover-dark tp-button ml-20 smooth-scroll" href="#why-us"> atuty </a>
                             </div>
                     </div>
                     
