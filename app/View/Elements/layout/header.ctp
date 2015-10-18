@@ -1,7 +1,4 @@
 <?php
-    $class = '';
-    $logo = 'ce-logo';
-    
     $current = $ucontroller . '-' . $uaction;
     
     $menus = array
@@ -17,11 +14,14 @@
             'controller' => 'services',
             'url' => '/services',
         ),
+        /*
         __('navigation.projects') => array
         (
             'controller' => 'projects',
             'url' => '/projects',
         ),
+         * 
+         */
         __('navigation.portfolio') => array
         (
             'controller' => 'portfolio',
@@ -39,12 +39,17 @@
         )
     );
     
+    $logo = 'ce-logo-black';
+    
+    $class = 'header header-1';
+    $logo = 'ce-logo-black';
+    
     switch ($current)
     {
         case 'home-index':
         {
-            $class = 'header header-1 black-header';
-            $logo = 'ce-logo';
+            $class = 'header header-1';
+            $logo = 'ce-logo-black';
             break;
         }
         default:

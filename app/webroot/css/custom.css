@@ -19,7 +19,7 @@
 }
 
 .rs-fullscr-container {
-    background-color: #000;
+    
 }
 
 .black-header #main-menu .navbar .nav > li.li-menu-flag a span {
@@ -115,8 +115,20 @@ ul#footer-images li a, ul#footer-images li a img {
     font-weight: 900;
 }
 
+#about p, #about h1, #about h3, #about .fes7-box-icon {
+    
+}
+
+#about-section {
+    background-color: #eee;
+}
+
+#about .about-container {
+    padding-left: 50px;
+}
+
 .why-us-section {
-    background-color: #EEEEEE;
+    background-color: #FFF;
 }
 
 .why-us-section h1 {
@@ -209,6 +221,7 @@ ul#footer-images li a, ul#footer-images li a img {
     padding-left: 0px;
     padding-right: 0px;
     text-align: justify;
+    padding: 100px 0px 0px 0px;
 }
 
 #page-section-services .ce-service-img {
@@ -230,4 +243,58 @@ ul#footer-images li a, ul#footer-images li a img {
 
 #page-section-services .fes6-img {
     background: url(/images/pages/services/integrations.jpg) 50% 50% no-repeat;
+}
+
+.title-fs-32 {
+    font-family: Lato,Arial, Helvetica, sans-serif;
+    line-height: 32px;
+    font-weight: 300;
+    
+    color: #4b4e53;
+    font-size: 32px;    
+}
+
+.work-proc-1-bg {
+    /* background: url(/images/pages/process/construction.jpg) fixed #2c2c2c; */
+}
+
+.work-proc-1-bg #cd-timeline {
+    margin-top: 0px;
+}
+
+.work-proc-1-bg #cd-timeline .cd-date-number {
+    display: inline-block;
+    padding-top: 8px;
+    font-size: 35px;
+}
+
+.work-proc-1-bg #cd-timeline .cd-timeline-start {
+    border: 3px solid #5D5F64;
+}
+
+.work-proc-1-bg #cd-timeline .cd-timeline-start-date {
+    color: #7e8082;
+}
+
+.work-proc-1-bg #cd-timeline .cd-timeline-content p {
+    color: #7e8082;
+}
+
+.work-proc-1-bg #cd-timeline h2 {
+    color: #4b4e53;
+}
+
+.work-proc-1-bg #cd-timeline .cd-date {
+    color: #F3F3F3;
+}
+
+.work-proc-1-bg .cd-timeline-img span {
+    color: #4b4e53;
+}
+
+@media (max-width: 991px)
+{
+    .work-proc-1-bg #cd-timeline .cd-date {
+        background-color: #303236;
+    }
 }

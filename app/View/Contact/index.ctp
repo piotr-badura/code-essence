@@ -1,9 +1,9 @@
 <?php
-    $this->Html->addCrumb(__('static.contact.breadcrumb'), array('admin' => false, 'controller' => 'contact', 'action' => 'index'));
+    $this->Html->addCrumb('kontakt', array('admin' => false, 'controller' => 'contact', 'action' => 'index'));
 ?>
 
 <?php
-    echo $this->element('/layout/breadcrumbs', array('title' => __('static.contact.breadcrumb')));
+    echo $this->element('/layout/breadcrumbs', array('title' => 'kontakt'));
 ?>
 
 <?php

@@ -1,7 +1,11 @@
 <?php
-    $class = 'footer2-black';
-    $logo = 'ce-logo-w-simple.png';
+    $class = '';
+    $logo = 'ce-logo-b-simple.png';
     
+    // $class = 'footer2-black';
+    // $logo = 'ce-logo-w-simple.png';
+
+    /*
     if (isset($version))
     {
         if ($version == 'white')
@@ -10,6 +14,7 @@
             $logo = 'ce-logo-b-simple.png';
         }
     }
+    */
 ?>
 
 <!-- FOOTER 2 -->
@@ -55,24 +60,24 @@
                 
                 <div class="footer-2-text-cont">
                     <p>
-                        <?php echo __('footer.about.text') ?>
+                        <?php echo strtolower(''); ?>
                     </p>
                 </div>
                 
             </div>
             
             <div class="col-md-3 col-sm-3 widget">
-                <h4> <?php echo __('footer.header.blog') ?> </h4>
+                <h4> <?php echo strtoupper('blog') ?> </h4>
 
                 <div id="post-list-footer">
                     <div class="post-prev-title">
-                        <h3><a class="a-text" href="/"> <?php echo __('footer.blog.last') ?> </a></h3>
+                        <h3><a class="a-text" href="/"> <?php echo 'w trakcie...' ?> </a></h3>
                     </div>
 
                     <div class="post-prev-info">
-                        <?php echo __('footer.blog.last.date') ?>
+                        <?php // echo '2015-10-10'; ?>
                     </div>
-                </div>    
+                </div>
 
             </div>
             
@@ -94,7 +99,7 @@
                             */
                         }
                     ?>
-                    <li> W trakcie... </li>
+                    <li> w trakcie... </li>
                 </ul>
             </div>            
             
@@ -103,8 +108,8 @@
         <div class="footer-2-copy-cont clearfix">
             <!-- Social Links -->
             <div class="footer-2-soc-a right">
-                <a href="/" title="<?php echo __('footer.social.facebook') ?>" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a href="/" title="<?php echo __('footer.social.twitter') ?>" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="/" title="<?php echo 'facebook' ?>" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="/" title="<?php echo 'twitter' ?>" target="_blank"><i class="fa fa-twitter"></i></a>
                 <?php
                     /*
                 <a href="/" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>

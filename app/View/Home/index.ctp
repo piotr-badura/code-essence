@@ -3,17 +3,17 @@
 ?>
 
 <!-- FEATURES 7 -->
-<div class="page-section clearfix">
-    <div id="about-left" class="fes7-img-cont col-md-5">
-        <div class="fes7-img" style="background-image: url(/images/pages/guy-with-laptop.jpg)"></div>
+<div id="about-section" class="page-section clearfix">
+    <div id="about-left" class="fes7-img-cont col-md-6 hidden-sm" style="background: url(/images/work-proc-bg.jpg) fixed #2c2c2c;">
+        <div class="fes7-img" style="background-image: url(/images/pages/home/mirror.png)"></div>
     </div>
 
-    <div class="container" id="about">
+    <div id="about" class="container">
         <div class="row">
-            <div class="col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
+            <div class="about-container col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
                 <h1><span class="font-light"> Witam na mojej stronie </span></h1>
                 
-                <p class="mb-20"> Code-Essence to działalność jednoosobowa założona w 2015 roku. Kocham to co robię, zawsze staram się patrzeć oczami odbiorcy a każde nowe wyzwanie tylko utwierdza mnie w przekonaniu, że nie istnieją rzeczy niemożliwe. </p>
+                <p class="mb-20"> Code-Essence to działalność jednoosobowa założona w 2015 roku. Kocham to co robię, zawsze staram się patrzeć oczami drugiej osoby, a każde nowe wyzwanie jest dla mnie motywacją i utwierdza mnie w przekonaniu, że nie istnieją rzeczy niemożliwe. </p>
                 <p class="mb-30"> <span class="fosnt-light"> Czym zajmuje się Code-Essence ? </span> </p>
         
                 <?php
@@ -38,7 +38,7 @@
                             'title' => 'Systemy CMS',
                             'href' => 'cms',
                             'icon' => 'icon-basic-gear',
-                            'description' => 'Bardziej zaawansowane oprogramowanie do zarządzania treścią stron, wszystko na miarę dopasowane do Twoich potrzeb'
+                            'description' => 'Zaawansowane oprogramowanie do zarządzania treścią stron, wszystko na miarę dopasowane do Twoich potrzeb'
                         ),
                         array
                         (
@@ -71,7 +71,7 @@
                                 <div class="icon <?php echo $service['icon'] ?>"></div>
                             </div>
                             <h3> <?php echo $service['title'] ?> </h3>
-                            <p> <?php echo $service['description'] ?>... <a href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'services', 'action' => 'index', '#' => 'ces-' . $service['href'])) ?>"> czytaj więcej... </a> </p>              
+                            <p> <span class="hidden-md"> <?php echo $service['description'] ?>... </span> <a href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'services', 'action' => 'index', '#' => 'ces-' . $service['href'])) ?>"> czytaj więcej... </a> </p>
                         </div>
                     </div>
 
@@ -93,6 +93,18 @@
     (
         array
         (
+            'title' => 'technologia',
+            'icon' => 'fa-code',
+            'description' => 'Code-Essence korzysta z najbardziej stabilnych rozwiązań - PHP / jQuery / MySQL i nie tylko'
+        ),
+        array
+        (
+            'title' => 'ładny design',
+            'icon' => 'fa-paint-brush',
+            'description' => 'Odwiedzający Twoją witrynę odczują niebywałą przyjemność podczas przebywania na niej'
+        ),        
+        array
+        (
             'title' => 'google seo',
             'icon' => 'fa-google',
             'description' => 'Gwarantuję usługę, która zostanie dobrze wypozycjonowana przez wyszukiwarkę google'
@@ -101,7 +113,7 @@
         (
             'title' => 'responsywność',
             'icon' => 'fa-mobile',
-            'description' => 'Każda witryna będzie poprawnie wyświetlana we wszystkich urządzeniach mobilnych'
+            'description' => 'Witryny będą poprawnie wyświetlane we wszystkich urządzeniach mobilnych'
         ),
         array
         (
@@ -111,21 +123,9 @@
         ),
         array
         (
-            'title' => 'piękny design',
-            'icon' => 'fa-paint-brush',
-            'description' => 'Odwiedzający Twoją witrynę odczują niebywałą przyjemność podczas przebywania na niej'
-        ),
-        array
-        (
             'title' => 'kompatybilność',
             'icon' => 'fa-bars',
-            'description' => 'Twoja strona poprawnie zadziała pod każdą dostępną przeglądarką'
-        ),
-        array
-        (
-            'title' => 'technologia',
-            'icon' => 'fa-code',
-            'description' => 'Code-Essence korzysta z najbardziej stabilnych rozwiązań - PHP / jQuery / MySQL i nie tylko'
+            'description' => 'Twoja witryna poprawnie zadziała pod każdą dostępną przeglądarką'
         ),
         array
         (
@@ -137,7 +137,7 @@
         (
             'title' => 'integracja',
             'icon' => 'fa-arrows-h',
-            'description' => 'Oferuję pełną integrację z najprzerózniejszymi serwisami'
+            'description' => 'Oferuję pełną integrację z najprzeróżniejszymi serwisami'
         )                
     )
 ?>
@@ -183,7 +183,14 @@
         </div>                    
     </div>
 </div>
-      
+
+<!-- CALL TO ACTION  -->
+<div class="port-view-more-cont">
+  <a class="port-view-more-dark" href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'contact', 'action' => 'index')) ?>"> NAPISZ DO MNIE </a>
+</div>
+
+<?php
+    /*
 <div class="page-section touch-contact-bg">
     <div class="container">
         <div class="touch-contact-text-cont clearfix">
@@ -197,7 +204,12 @@
         </div>
     </div>
 </div>
+     * 
+     */
+?>
 
+<?php
+    /*
 <!-- CLIENTS 1 & TESTIMONIALS 1 -->
 <div id="recomendations" class="page-section p-80-cont">
     <div class="container">
@@ -226,3 +238,25 @@
         </div>
     </div>
 </div>
+
+*/
+?>
+
+<?php
+/*
+<!-- OUR CLIENTS 2 -->	
+<div class="container" >
+    <div class="row" >
+
+        <div class="col-md-12" >
+            <div id="owl-clients" class="owl-carousel our-clients-cont">
+                <div class="item">
+                    <img src="/images/logo/ce-logo-b-simple.png" alt="" />
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+*/
+?>
