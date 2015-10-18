@@ -73,7 +73,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'gobadei2_ce',
-		'password' => 'GJBTtcey',
+		'password' => 'GJBTtcey', 
 		'database' => 'gobadei2_ce',
 		'prefix' => '',
 		'encoding' => 'utf8',
