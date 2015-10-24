@@ -5,10 +5,10 @@
         <group/>
         <group name="Group 20150706-01:58:48"/>
         <group name="Group My Default">
+            <file>file:/F:/wamp/www/_GIT/code-essence/app/View/Services/index.ctp</file>
             <file>file:/F:/wamp/www/_GIT/code-essence/app/webroot/css/custom.css</file>
             <file>file:/F:/wamp/www/_GIT/code-essence/app/View/Elements/layout/slider-revolution.ctp</file>
-            <file>file:/F:/wamp/www/_GIT/code-essence/app/View/Home/index.ctp</file>
-            <file>file:/F:/wamp/www/_GIT/code-essence/app/View/Elements/layout/header.ctp</file>
+            <file>file:/F:/wamp/www/_GIT/code-essence/app/View/Elements/layout/footer/default.ctp</file>
         </group>
     </open-files>
 </project-private>

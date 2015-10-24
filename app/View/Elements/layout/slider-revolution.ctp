@@ -4,7 +4,7 @@
 
         <div id="rs-fullscr" class="tp-banner" >
             <ul>
-                <li data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/revo-slider/slider-04x.jpg" data-saveperformance="on" data-title="BEGIN">
+                <li data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/revo-slider/slider-04x.jpg" data-saveperformance="on" data-title="PASJA">
                     <!-- MAIN IMAGE -->
                     <img src="images/revo-slider/dummy.png" alt="slidebg1" data-lazyload="images/revo-slider/slider-04x.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     
@@ -101,7 +101,7 @@
                 </li>                
                 
                 <!-- SLIDE 1 -->
-                <li data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/revo-slider/slider-05x.jpg" data-saveperformance="on" data-title="BEGIN">
+                <li data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/revo-slider/slider-05x.jpg" data-saveperformance="on" data-title="MOTYWACJA">
                     <!-- MAIN IMAGE -->
                     <img src="images/revo-slider/dummy.png" alt="slidebg1" data-lazyload="images/revo-slider/slider-05x.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     
@@ -161,7 +161,7 @@
                                     data-splitout="none"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"> świadomość, że ktoś codziennie cieszy <br /> się z mojej pracy uskrzydla 
+                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"> świadomość, że ktoś codziennie z uśmiechem <br /> korzysta z mojej pracy jest ekscytująca
                             </div>                            
                             
                             <!-- LAYER NR. 3 LINE -->
@@ -206,9 +206,9 @@
                 </li>                
                 
                 <!-- SLIDE 1 -->
-                <li data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/revo-slider/slider-06x.jpg" data-saveperformance="on" data-title="BEGIN">
+                <li data-transition="zoomout" data-slotamount="1" data-masterspeed="1500" data-thumb="images/revo-slider/slider-06xx.jpg" data-saveperformance="on" data-title="WYZWANIE">
                     <!-- MAIN IMAGE -->
-                    <img src="images/revo-slider/dummy.png" alt="slidebg1" data-lazyload="images/revo-slider/slider-06x.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="images/revo-slider/dummy.png" alt="slidebg1" data-lazyload="images/revo-slider/slider-06xx.jpg" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     
                     <!-- LAYERS -->
 
@@ -266,8 +266,8 @@
                                     data-splitout="none"
                                     data-elementdelay="0.1"
                                     data-endelementdelay="0.1"
-                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"> 10-letnie doświadczenie nauczyło mnie <br /> że wszystko można osiągnąć
-                            </div>                                                        
+                                    style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap;"> 10-letnie doświadczenie nauczyło mnie <br /> że nie istnieją rzeczy niemożliwe
+                            </div>
 
                             <?php
                                 /*
@@ -302,7 +302,7 @@
                                     data-endelementdelay="0.1"
                                     style="z-index: 9; max-width: auto; max-height: auto; white-space: nowrap"> 
                                 
-                                <a class="button medium thin tp-button hover-dark" href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'contact', 'action' => 'index')) ?>"> Kontakt </a>                                        
+                                <a class="button medium thin tp-button hover-dark" href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'contact', 'action' => 'index')) ?>"> Kontakt </a>
                                 
                             </div>
                     </div>

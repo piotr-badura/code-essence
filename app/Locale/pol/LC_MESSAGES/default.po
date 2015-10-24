@@ -2,7 +2,7 @@ msgid "navigation.home"
 msgstr "home"
 
 msgid "navigation.services"
-msgstr "uslugi"
+msgstr "oferta"
 
 msgid "navigation.projects"
 msgstr "projekty"

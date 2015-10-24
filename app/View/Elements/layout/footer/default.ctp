@@ -36,7 +36,9 @@
                             </div>
                             
                             <div class="footer-2-text-cont">
-                                <a class="a-text bold" href="mailto:<?php echo $umyconfig['company.mail']; ?>"> <?php echo $umyconfig['company.mail']; ?> </a>
+                                <a class="a-text bold" href="mailto:<?php echo $umyconfig['company.mail']; ?>">
+                                    <?php echo $umyconfig['company.mail']; ?> 
+                                </a>
                             </div>
                             
                         </div>
@@ -56,13 +58,18 @@
                             
                         </div>
                     </div>
-                </div>
+                </div>                                
                 
+                <?php
+                    /*
                 <div class="footer-2-text-cont">
                     <p>
-                        <?php echo strtolower(''); ?>
+                        <?php echo strtolower('Code-Essence - solidne oprogramowanie internetowe'); ?>
                     </p>
                 </div>
+                     * 
+                     */
+                ?>
                 
             </div>
             
@@ -71,7 +78,7 @@
 
                 <div id="post-list-footer">
                     <div class="post-prev-title">
-                        <h3><a class="a-text" href="/"> <?php echo 'w trakcie...' ?> </a></h3>
+                        <h3><a class="a-text" href="/"> <?php echo 'w realizacji...' ?> </a></h3>
                     </div>
 
                     <div class="post-prev-info">
@@ -99,7 +106,7 @@
                             */
                         }
                     ?>
-                    <li> w trakcie... </li>
+                    <li> w realizacji... </li>
                 </ul>
             </div>            
             

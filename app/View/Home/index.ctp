@@ -4,17 +4,20 @@
 
 <!-- FEATURES 7 -->
 <div id="about-section" class="page-section clearfix">
-    <div id="about-left" class="fes7-img-cont col-md-6 hidden-sm" style="background: url(/images/work-proc-bg.jpg) fixed #2c2c2c;">
-        <div class="fes7-img" style="background-image: url(/images/pages/home/mirror.png)"></div>
+    <div id="about-left" class="fes7-img-cont col-md-6 hidden-sm hidden-xs">
+        <div class="fes7-img" style="background-image: url(/images/pages/home/services.jpg)"></div>
     </div>
 
     <div id="about" class="container">
         <div class="row">
             <div class="about-container col-md-6 col-md-offset-6 fes7-text-cont p-80-cont">
-                <h1><span class="font-light"> Witam na mojej stronie </span></h1>
+                <?php // <h1><span class="font-light"> Witam w Code-Essence ! </span></h1> ?>
                 
-                <p class="mb-20"> Code-Essence to działalność jednoosobowa założona w 2015 roku. Kocham to co robię, zawsze staram się patrzeć oczami drugiej osoby, a każde nowe wyzwanie jest dla mnie motywacją i utwierdza mnie w przekonaniu, że nie istnieją rzeczy niemożliwe. </p>
-                <p class="mb-30"> <span class="fosnt-light"> Czym zajmuje się Code-Essence ? </span> </p>
+                <p class="mb-20 text-justify"> <span class="dropcap1 dropcap-custom">C</span> ode-Essence to działalność jednoosobowa założona w 2015 roku, która specjalizuje się głównie w projektowaniu oprogramowania internetowego. Uwielbiam swoją pracę, jest ona również dla mnie pasją, stąd często i chętnie spędzam wolny czas, aby poszerzać wiedzę. W branży programowania pracuję już 10 lat, podczas których zrealizowałem wiele projektów, dlatego głęboko wierzę i po cichu liczę, że może i Ty obdarzysz mnie zaufaniem. Gorąco zachęcam do obejrzenia strony, moich prac, czasami także podzielę się moimi spostrzeżeniami na blogu. <i style="padding-left: 5px" class="fa fa-smile-o"> </i> </p>
+                
+                <hr class="" style="border-color: #ddd;">
+                
+                <p class="mb-30"> <span class="fosnt-light"> Co mogę zaproponować ? </span> </p>
         
                 <?php
                     $services = array
@@ -24,7 +27,7 @@
                             'title' => 'Witryny internetowe',
                             'href' => 'websites',
                             'icon' => 'icon-basic-display',
-                            'description' => 'Wizytówki i portfolia, które dobrze zaprezentują i wypozycjonują Ciebie, bądź Twoją firmę w sieci'
+                            'description' => 'Wizytówki, portfolia, blogi które dobrze zaprezentują i wypozycjonują Ciebie, bądź Twoją firmę w sieci'
                         ),
                         array
                         (
@@ -38,21 +41,21 @@
                             'title' => 'Systemy CMS',
                             'href' => 'cms',
                             'icon' => 'icon-basic-gear',
-                            'description' => 'Zaawansowane oprogramowanie do zarządzania treścią stron, wszystko na miarę dopasowane do Twoich potrzeb'
+                            'description' => 'Zaawansowane oprogramowanie do zarządzania treścią stron, wszystko na miarę dopasowane do określonych potrzeb'
                         ),
                         array
                         (
                             'title' => 'Obsługa hostingu',
                             'href' => 'hosting',
                             'icon' => 'icon-basic-server',
-                            'description' => 'Na Twoje życzenie Code-Essence zajmie się obsługą serwerów, domen, czy skrzynek pocztowych'
+                            'description' => 'Na Twoje życzenie Code-Essence zajmie się również konfiguracją serwerów, domen, czy skrzynek pocztowych'
                         ),
                         array
                         (
                             'title' => 'Integracje',
                             'href' => 'integrations',
                             'icon' => 'icon-basic-share',
-                            'description' => 'Oferuję również integracje z portalami społecznościowymi, narzędziami google, jak i pisanie api, widgetów'
+                            'description' => 'Integracja z portalami społecznościowymi, narzędziami google, projektowanie api, widgetów i wtyczek'
                         )
                     )
                 ?>
@@ -71,7 +74,14 @@
                                 <div class="icon <?php echo $service['icon'] ?>"></div>
                             </div>
                             <h3> <?php echo $service['title'] ?> </h3>
-                            <p> <span class="hidden-md"> <?php echo $service['description'] ?>... </span> <a href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'services', 'action' => 'index', '#' => 'ces-' . $service['href'])) ?>"> czytaj więcej... </a> </p>
+                            <p> 
+                                <span class="hidden-md"> <?php echo $service['description'] ?><?php //... ?> </span> 
+                                <?php
+                                    /*
+                                <a href="<?php echo $this->Html->url(array('admin' => false, 'controller' => 'services', 'action' => 'index', '#' => 'ces-' . $service['href'])) ?>"> czytaj więcej... </a> 
+                                     */
+                                ?>
+                            </p>
                         </div>
                     </div>
 
@@ -82,6 +92,9 @@
                     }
                 ?>
 
+                <hr class="mt-20 mb-30" style="border-color: #ddd;">
+                <a href="/services" style="padding-left: 47px;"> czytaj więcej... </a>
+                
             </div>
         </div><!--end of row-->
     
@@ -93,52 +106,58 @@
     (
         array
         (
+            'title' => 'zalety',
+            'icon' => 'fa-thumbs-up',
+            'description' => 'Firmę charakteryzuje solidność, kompetentność, terminowość i uczciwość'
+        ),
+        array
+        (
             'title' => 'technologia',
             'icon' => 'fa-code',
-            'description' => 'Code-Essence korzysta z najbardziej stabilnych rozwiązań - PHP / jQuery / MySQL i nie tylko'
+            'description' => 'Code-Essence korzysta z najbardziej nowoczesnych i stabilnych rozwiązań'
         ),
         array
         (
             'title' => 'ładny design',
             'icon' => 'fa-paint-brush',
-            'description' => 'Odwiedzający Twoją witrynę odczują niebywałą przyjemność podczas przebywania na niej'
+            'description' => 'Odwiedzający Twoją stronę odczują niebywałą przyjemność podczas przebywania na niej'
         ),        
         array
         (
             'title' => 'google seo',
             'icon' => 'fa-google',
-            'description' => 'Gwarantuję usługę, która zostanie dobrze wypozycjonowana przez wyszukiwarkę google'
+            'description' => 'Internetowe prezentacje są projektowane pod kątem dobrych wyników w google'
         ),
         array
         (
             'title' => 'responsywność',
             'icon' => 'fa-mobile',
-            'description' => 'Witryny będą poprawnie wyświetlane we wszystkich urządzeniach mobilnych'
+            'description' => 'Witryny dopasowują się do rozmiarów urządzeń mobilnych dzięki bootstrap'
         ),
+        array
+        (
+            'title' => 'wielojezycznosc',
+            'description' => 'Celujesz w odbiorców z zagranicy ? Łatwa i intuicyjna obsługa wielu języków i tłumaczeń',
+            'icon' => 'icon-basic-flag1'
+        ),        
         array
         (
             'title' => 'optymalizacja',
             'icon' => 'fa-bolt',
-            'description' => 'Stawiam na szybkość - użytkownicy nawet ze słabym łączem odczytają stronę w mgnieniu oka'
+            'description' => 'Kompresja kodu usprawni pobyt gości ze słabszym łączem internetowym'
         ),
         array
         (
             'title' => 'kompatybilność',
             'icon' => 'fa-bars',
-            'description' => 'Twoja witryna poprawnie zadziała pod każdą dostępną przeglądarką'
+            'description' => 'Code-Essence ma na względzie klientów wszystkich najpopularniejszych przeglądarek'
         ),
         array
         (
             'title' => 'bezpieczeństwo',
             'icon' => 'fa-lock',
             'description' => 'Możesz spać spokojnie, zadbam o to, aby nikt się nie wkradł do systemu'
-        ),
-        array
-        (
-            'title' => 'integracja',
-            'icon' => 'fa-arrows-h',
-            'description' => 'Oferuję pełną integrację z najprzeróżniejszymi serwisami'
-        )                
+        )
     )
 ?>
 
@@ -146,7 +165,7 @@
 <div id="why-us" class="page-section p-80-cont why-us-section">
     <div class="container">
         <h1>
-            <span class="font-light"> Dlaczego Code-Essence </span> 
+            <span class="dropcap1 dropcap-custom">D</span> <span class="span-later-dropcap font-light"> laczego Code-Essence ? </span> 
             <?php /* <span class="fa fa-question-circle"></span> */ ?> 
         </h1>
                 

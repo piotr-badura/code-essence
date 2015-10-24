@@ -9,7 +9,7 @@
         array
         (
             'title' => 'blog',
-            'subtitle' => 'ciekawostki'
+            'subtitle' => 'ciekawostki, artykuły, tutoriale'
         )
     );
 ?>
@@ -23,9 +23,9 @@
 
             <!-- SEARCH -->
             <div class="widget">
-                <form class="form-search widget-search-form" action="" method="get">
+                <form class="form-search widget-search-form" action="/" method="get">
                     <input type="text" name="q" class="input-search-widget" placeholder="szukaj">
-                    <button class="" type="submit" title="start">
+                    <button class="" type="button" title="start">
                         <span aria-hidden="true" class="icon_search"></span>
                     </button>
                 </form>
@@ -39,19 +39,19 @@
                 <div class="widget-body">
                     <ul class="clearlist widget-menu">
                         <li>
-                            <a href="#" title=""> PHP </a>
+                            <a title=""> PHP </a>
                             <small> <span class="slash-divider">/</span> 0 </small>
                         </li>
                         <li>
-                            <a href="#" title=""> jQuery </a>
+                            <a title=""> jQuery </a>
                             <small> <span class="slash-divider">/</span> 0 </small>
                         </li>
                         <li>
-                            <a href="#" title=""> Bazy danych </a>
+                            <a title=""> Bazy danych </a>
                             <small><span class="slash-divider">/</span> 0 </small>
                         </li>
                         <li>
-                            <a href="#" title=""> Inne </a><small>
+                            <a title=""> Inne </a><small>
                             <span class="slash-divider">/</span> 1 </small>
                         </li>
                     </ul>
@@ -102,11 +102,11 @@
 
                 <div class="widget-body">
                     <div class="tags">
-                        <a href="#"> Design </a>
-                        <a href="#"> Programowanie </a>
-                        <a href="#"> E-commerce </a>
-                        <a href="#"> Reklama </a>
-                        <a href="#"> Promocja </a>
+                        <a> Design </a>
+                        <a> Programowanie </a>
+                        <a> E-commerce </a>
+                        <a> Reklama </a>
+                        <a> Promocja </a>
                     </div>
                 </div>
 
@@ -117,7 +117,7 @@
                 <h5 class="widget-title"> Witam na blogu </h5>
 
                 <div class="widget-body">
-                    <p> Regularnie będę starał się umieszczać w tym miejscu ciekawe informcaje ze świata programowania i nie tylko.. </p>
+                    <p> Regularnie umieszczane będą w tym miejscu artkuły ze świata programowania i nie tylko.. </p>
                 </div>
             </div>
 
@@ -129,7 +129,7 @@
                 <div class="widget-body">
                     <ul class="clearlist widget-menu">
                         <li>
-                            <a href="#" title=""> Lipiec 2015 </a>
+                            <a title=""> Lipiec 2015 </a>
                             <small><span class="slash-divider">/</span> 0 </small>
                         </li>
                     </ul>
@@ -146,8 +146,9 @@
             <!-- Post Item -->
             <div class="wow fadeIn pb-80">
                 <div class="post-prev-img">
-                    <a href="#">
-                        <img src="/images/blog/post-prev-1.jpg" alt="img">
+                    <a>
+                        <?php //<img src="/images/blog/post-prev-1.jpg" alt="img"> ?>
+                        <img src="/images/my-blog/new-website/new-website.jpg" alt="img" />
                     </a>
                 </div>
 
@@ -160,39 +161,43 @@
                 <div class="post-prev-info">
                   LIPIEC 10<span class="slash-divider">/</span>
                   <?php // <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel">JOHN DOE</a><span class="slash-divider">/</span> ?>
-                  <a href="#"> INNE </a>, <a href="#"> PROGRAMOWANIE </a>
+                  <a> INNE </a>, <a> PROGRAMOWANIE </a>
                 </div>
 
 
                 <div class="post-prev-text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, nostrum, cumque culpa provident aliquam commodi assumenda laudantium magnam illo nostrum. Donec nibh sapien, molestie quis elementum et, dim non atino ipsum. 
+                    Gorąco witam na mojej stronie ! Nowa odsłona Code-Essence nareszcie ujrzała światło dzienne, z czego nie ukrywam czuję się dumny. Głęboko wierzę również, że niejeden miłośnik programowania znajdzie w tym miejscu coś interesującego.
                 </div>
 
                 <div class="post-prev-more-cont clearfix">
                     <div class="post-prev-more left">
-                        <a href="#" class="blog-more"> <?php echo strtoupper('czytaj wiecej') ?> </a>
+                        <a class="blog-more"> <?php echo strtoupper('czytaj wiecej') ?> </a>
                     </div>
                     <div class="right">
-                        <a href="#" class="post-prev-count">
+                        <a class="post-prev-count">
                             <span aria-hidden="true" class="icon_comment_alt"></span>
                             <span class="icon-count">0</span>
                         </a>
-                        <a href="#" class="post-prev-count">
+                        <a class="post-prev-count">
                             <span aria-hidden="true" class="icon_heart_alt"></span>
                             <span class="icon-count">0</span>
                         </a>
-                        <a href="#" class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        
+                        <?php
+                            /*
+                        
+                        <a class="post-prev-count dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <span aria-hidden="true" class="social_share"></span>
                         </a>
 
                         <ul class="social-menu dropdown-menu dropdown-menu-right" role="menu">
                             <li>
-                                <a href="#">
+                                <a>
                                     <span aria-hidden="true" class="social_facebook"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a>
                                     <span aria-hidden="true" class="social_twitter"></span>
                                 </a>
                             </li>
@@ -202,6 +207,9 @@
                                 </a>
                             </li>
                         </ul>
+                             * 
+                             */
+                        ?>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 <?php
-    $this->Html->addCrumb('usługi', array('admin' => false, 'controller' => 'about', 'action' => 'index'));
+    $this->Html->addCrumb('oferta', array('admin' => false, 'controller' => 'services', 'action' => 'index'));
 ?>
 
 <?php
@@ -8,8 +8,8 @@
         '/layout/breadcrumbs',
         array
         (
-            'title' => 'usługi',
-            'subtitle' => 'sprawdź co oferuję'
+            'title' => 'oferta',
+            'subtitle' => 'zobacz co mogę Tobie zaproponować'
         )
     );
 ?>
@@ -22,7 +22,7 @@
             
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <div class="fes4-box wow fadeIn">
-                    <h2 class="section-title"> <?php echo strtoupper('z jakich narzedzi') ?> <span class="bold"> <?php echo strtoupper('korzystam') ?> ? </span></h2>
+                    <h2 class="section-title"> <?php echo strtoupper('narzedzia') ?> <br /> <span class="bold"> <?php echo strtoupper('pracy') ?> </span></h2>
                 </div>
             </div>            
             
@@ -32,42 +32,42 @@
                     array
                     (                            
                         'title' => 'HTML5',
-                        'title-sub' => 'czyste źródło',
+                        'title-sub' => 'zgodność ze standardami',
                         'icon' => 'icon-basic-settings',
                         'img' => 'html5.jpg',
-                        'description' => 'HTML 5 to najnowszy standard tworzenia stron internetowych, możesz być pewny, że Twoja witryna będzie na czasie'
+                        'description' => 'HTML 5 to najnowszy standard prezentowania stron internetowych, udostępnia funkcje płótna i multimediów'
                     ),
                     array
-                    (                            
+                    (
                         'title' => 'CSS3',
-                        'title-sub' => 'piękne animacje',
+                        'title-sub' => 'nieograniczony potencjał',
                         'icon' => 'icon-basic-settings',
                         'img' => 'css3.jpg',
-                        'description' => 'CSS 3 - nieograniczone możliwości, odpowiednie pozycjonowanie elementów, animacje, przejścia, które nadadzą uroku każdej stronie'
+                        'description' => 'Interesujące przejścia i animacje, transformacje 2D / 3D, oraz efekty na tekście upiększą i dodadzą uroku każdej witrynie'
                     ),
                     array
                     (                            
                         'title' => 'jQuery',
-                        'title-sub' => 'dynamiczna treść',
+                        'title-sub' => 'dynamiczna zawartość',
                         'icon' => 'icon-basic-settings',
                         'img' => 'jquery.jpg',
-                        'description' => 'Dynamiczne generowanie zawartości - bez odświeżania witryny, świetne narzędzie do tworzenia animacji i wzbogacenia funkcjonalności'
+                        'description' => 'jQuery generuje zawartość bez potrzeby odświeżania stron, jest świetnym narzędziem do animacji i manipulacji elementami'
                     ),
                     array
                     (                            
                         'title' => 'PHP',
-                        'title-sub' => 'bezpieczeństwo',
+                        'title-sub' => 'efektywność',
                         'icon' => 'icon-basic-settings',
                         'img' => 'php.jpg',
-                        'description' => 'Sprawdzony i bezpieczny język programowania po stronie serwera - przetworzy i wyświetli informacje w błyskawicznym tempie'
+                        'description' => 'Język programowania po stronie serwera - charakteryzuje go szybkość, bezpieczeństwo i funkcjonalność bez limitu'
                     ),
                     array
                     (                            
                         'title' => 'MySQL',
-                        'title-sub' => 'szybkie przetwarzanie',
+                        'title-sub' => 'przetwarzanie danych',
                         'icon' => 'icon-basic-settings',
                         'img' => 'mysql.jpg',
-                        'description' => 'Baza danych dobra zarówno do małych jak i większych rozwiązań - idealne i sprawdzone rozwiązanie dla każdego'
+                        'description' => 'Baza danych świetna zarówno dla małych jak i większych rozwiązań - mySQL operuje danymi bardzo efektywnie'
                     )                    
                 )                
             ?>
@@ -82,7 +82,7 @@
                 <div class="fes4-box wow fadeIn" data-wow-delay="<?php echo $mili; ?>ms">
                     <div class="fes4-title-cont">
                         <div class="fes4-box-icon">                            
-                            <img src="/images/pages/tech/<?php echo $tech['img'] ?>" />
+                            <img src="/images/pages/services/technology/<?php echo $tech['img'] ?>" alt="<?php echo $tech['title'] ?>" />
                         </div>
                         <h3><span class="bold"><?php echo $tech['title'] ?></span></h3>
                         <p> <?php echo $tech['title-sub'] ?> </p>
@@ -101,14 +101,9 @@
     </div>
 </div>
 
-<div class="container pb-80">
-    <h2 class="section-title"> 
-        <?php echo strtoupper('zobacz') ?> 
-        <span class="bold"> <?php echo strtoupper('co oferuje') ?> </span>
-    </h2>
+<div class="port-view-more-cont">
+  <p class="port-view-more-dark port-view-no-more-dark"> OFERTA </p>
 </div>
-
-<hr class="mt-0 mb-0">
 
 <?php
     $services = array
@@ -119,7 +114,7 @@
             'title' => 'internetowe',
             'image' => 'websites.jpg',
             'href' => 'websites',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            'description' => 'Oprogramowanie internetowe zazwyczaj z prostą funkcjonalnością, celujące głównie w dobrą prezentację, oraz pozyskiwanie popularności. Potrzebujesz bloga, na którym chciałbyś się podzielić ze światem swoim doświadczeniem i przeżyciami ? A może interesuje Cie jedynie promocja i pozyskanie nowych klientów ? Z przyjemnością pomogę Ci zbudować takie miejsce w globalnej sieci, które dobrze zaprezentuje Twój wizerunek'
         ),
         array
         (
@@ -127,7 +122,7 @@
             'title' => 'e-commerce',
             'image' => 'ecommerce.jpg',
             'href' => 'ecommerce',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            'description' => 'W przeciągu swojego długoletniego doświadczenia realizowałem wiele projektów, które przynosiły niemałe zyski właścicielom. Sklepy internetowe, oraz programy partnerskie wymagają większego nakładu pracy, ale w istocie bardzo szybko się zwracają. Kluczem tutaj jest dobre wypozycjonowanie w wyszukiwarkach, bezpieczeństwo, a także strefa klienta przyjazna w użytkowaniu - w moim portfolio znajdziesz próbkę możliwośći'
         ),
         array
         (
@@ -135,15 +130,15 @@
             'title' => 'zarządzania treścią',
             'image' => 'cms.jpg',
             'href' => 'cms',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            'description' => 'Zaawansowane oprogramowanie do zarządzania firmami to propozycja najbardziej kompleksowa - bezkres możliwości, oraz wszystkie usługi zgromadzone w jednym miejscu ułatwiają pracę i oszczędzają czas. CMS to obsługa finansów, kadr, procesu produkcji i bazy kontrahentów, administracja witrynami, zarządzanie treścią i multimediami, generowanie faktur, statystyk, diagramów i rokowań, mailing. Dzięki integracjom z popularnymi serwisami jest swoistym kombajnem '
         ),
         array
         (
             'title-header' => 'obsługa',
             'title' => 'hostingu',
-            'image' => 'hosting.jpg',
+            'image' => 'server.jpg',
             'href' => 'hosting',
-            'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+            'description' => 'Oferta zawiera konfigurację i utrzymanie serwerów, oraz domen, na których znajduje się oprogramowanie, monitorowanie usług których termin zbliża się ku wygaśnięciu i podejmowanie stosownych decyzji po wcześniejszych konsultacjach. Zakres oferty obejmuje również zarządzanie skrzynkami pocztowymi, tworzenie nowych, oraz usuwanie już nieużywanych, a także eksport i archiwizację danych zgromadzonych na serwerach'
         ),
         /*
         array
@@ -207,7 +202,7 @@
                                     </div>
                             </div>
 
-                            <div class="col-md-6 <?php echo $classpos ?> hidden-sm">
+                            <div class="col-md-6 <?php echo $classpos ?> hidden-sm hidden-xs">
                                     <div class="row">
                                             <div class="equal-height" style="background: url(/images/pages/services/<?php echo $service['image'] ?>) 50% 50% no-repeat; background-size: cover;"></div>
                                     </div>
@@ -237,39 +232,51 @@
                     array
                     (
                         'title' => 'systemy platnicze',
-                        'description' => 'integracja systemów PayU, Przelewy24, PayPal, Stripe, Authorize, Sofort',
+                        'description' => 'Integracja systemów PayU, Przelewy24, PayPal, Stripe, Authorize, Sofort',
                         'icon' => 'icon-ecommerce-dollar'
                     ),
                     array
                     (
                         'title' => 'narzedzia google',
-                        'description' => 'połączenie usług google z Twoją witryną - google maps, google calendar, google analytics, oraz inne',
+                        'description' => 'Usługi google na wyciągnięcie ręki - google maps, google calendar, google analytics',
                         'icon' => 'icon-basic-geolocalize-01'
                     ),
                     array
                     (
-                        'title' => 'social',
-                        'description' => 'chciałbyć uspołecznić Twoją stronę ? oferuję integrację z facebook, twitter, google plus, linkedin',
+                        'title' => 'spolecznosc',
+                        'description' => 'Łączenie strony ze światem - facebook, twitter, google plus, linkedin',
                         'icon' => 'icon-basic-share'
                     ),
                     array
                     (
+                        'title' => 'mailing',
+                        'description' => 'Budowanie baz subskrybentów, oraz rozsyłanie im wiadomości poprzez api mailchimp',
+                        'icon' => 'icon-basic-mail'
+                    ),                    
+                    array
+                    (
                         'title' => 'serwisy wysylkowe',
-                        'description' => 'wdrażanie usług przewoźniczych, ups i fedex, przeliczanie kosztów, planowanie wysyłki',
+                        'description' => 'Planowanie wysyłki i przeliczanie kosztów transportu przewoźników ups i fedex',
                         'icon' => 'icon-ecommerce-bag'
                     ),
                     array
                     (
                         'title' => 'migracje',
-                        'description' => 'jeżeli wordpress nie spełania już dłużej Twoich oczekiwać - mogę wykonać migrację',
+                        'description' => 'Wordpress / joomla - bezpieczna i efektywna migracja danych, oraz strony',
                         'icon' => 'icon-arrows-drag-right-dashed'
                     ),
                     array
                     (
-                        'title' => 'api',
-                        'description' => 'dzięki api, możesz udostępnić swoje dane w bezpieczny sposób innej firmie',
-                        'icon' => 'icon-basic-info'
+                        'title' => 'pluginy',
+                        'description' => 'Dodatki wzbogające witrynę - gotowe do użycia widgety i pluginy wykonane w jQuery',
+                        'icon' => 'icon-basic-link'
                     ),                    
+                    array
+                    (
+                        'title' => 'api',
+                        'description' => 'Skrypty, które pozwalają udostępnić w bezpieczny sposób określone dane innemu podmiotowi',
+                        'icon' => 'icon-basic-info'
+                    ),
                 );
             ?>
 
@@ -309,24 +316,32 @@
     </div>
 </div>
 
+<div class="port-view-more-cont">
+  <p class="port-view-more-dark port-view-no-more-dark"> PROCES W KROKACH </p>
+</div>
+
 <!-- WORK PROCESS 1 -->
-<div class="page-section work-proc-1-bg">
-    <div class="container fes4-cont">
+<div class="page-section">
+    <div class="container fes4-cont pt-80">
         
         <div class="row">
 
+            <?php
+                /*
             <div class="col-md-3">
                 <div class="mb-50">
                     <h2 class="section-title"> PROCES W <span class="bold"> KROKACH </span></h2>
                 </div>
                 <?php // <p class="mb-50"> grafik przentujący cały proces od kontaktu do zamknięcia projektu </p> ?>
             </div>
+                */
+            ?>
             
-            <div class="col-md-9">
+            <div class="col-md-12">
 
-                <div id="cd-timeline">
+                <div id="cd-timeline" class="custom-timeline">
                     <div class="cd-timeline-start">
-                        <div class="cd-timeline-start-caption"> START </div>
+                        <div class="cd-timeline-start-caption"> KONTAKT </div>
                     </div>
                     
                     <?php
@@ -335,32 +350,32 @@
                             array
                             (
                                 'icon' => 'icon_mobile',
-                                'title' => 'kontakt',
-                                'description' => 'Napisz do mnie, bądź zadzwoń - porozmawiajmy o Twojej witrynie, usłudze jakiej potrzebujesz i odbiorcach do których chciałbyś ją skierować, ustalmy co dokładnie ma się zawierać na stronie i jak ogólnikowo miałaby ona wyglądać'
+                                'title' => 'rozmowa',
+                                'description' => 'Możesz ze mną skontaktować się telefonicznie, bądź mailowo - przyjmę Cie w moim biurze, bądź jeżeli preferujesz, temat Twojej usługi omówimy w kawiarni. Na tym etapie chciałbym zorientować się jakie dokładnie są Twoje potrzeby, do której grupy odbiorców planujesz dotrzeć, oraz porozmawiać na temat wyglądu witryny'
                             ),
                             array
                             (
                                 'icon' => ' icon_currency',
                                 'title' => 'wycena',
-                                'description' => 'Po ustaleniu szczegółów, zaproponuję wycenę usługi, oraz termin jej wykonania'
+                                'description' => 'Po ustaleniu wszystkich detali, zaproponuję wycenę usługi, oraz termin jej wykonania'
                             ),
                             array
                             (
                                 'icon' => 'icon_desktop',
                                 'title' => 'design',
-                                'description' => 'Przestawię kilka propozycji graficznych, Ty wybierzesz najlepszą z nich, dodatkowe wskazówki również będą mile widziane'
+                                'description' => 'Mając na uwadze Twoje preferencje wizualne, przedstawię kilka propozycji w formie zdjęć, bądź linków. Jeżeli któraś Ci się spodoba, możesz do niej dołączyć swoje spostrzeżenia, oraz poprawki jakie powinny zostać naniesione'
                             ),
                             array
                             (
                                 'icon' => 'icon_loading',
                                 'title' => 'implementacja',
-                                'description' => 'Tutaj zabieram się za pracę, bądźmy w kontakcie, aby na bieżąco weryfikować postęp prac, oraz rozwiewać ewentualne wątpliwości'
+                                'description' => 'To najbardziej czasochłonny proces, który jest silnikiem, lub sercem Twojej witryny. Na tym etapie chciałbym utrzymywać regularny kontakt w celu weryfikacji postępów prac, oraz rozwiewania ewentualnie pojawiających się wątpliwości czy pytań'
                             ),
                             array
                             (
                                 'icon' => 'icon_tool',
                                 'title' => 'poprawki',
-                                'description' => 'Daj znać, jeżeli istnieje coś, co chciałbyś jeszcze zmodyfikować na stronie'
+                                'description' => 'Czasami zdarza się, że jesteśmy zadowoleni z gotowego projektu, ale pragniemy jeszcze zmienić drobne detale i niuanse, które wcześniej nam nie przeszkadzały. W tym kroku śmiało możesz je wymieniać'
                             )
                         );
                         
@@ -388,16 +403,19 @@
                         }
                     ?>
 
-        <div class="cd-timeline-start cd-final">
-                <div class="cd-timeline-start-caption"> KONIEC </div>
-        </div>
-</div>
+                        <div class="cd-timeline-start cd-final">
+                            <div class="cd-timeline-start-caption" style="padding: 0"> <i class="fa fa-smile-o" style="font-size: 40px"></i> </div>
+                        </div>
+                </div>
 
             </div>
         </div>
         
     </div>
 </div>
+
+<?php
+    /*
 
 <!-- FEATURES 8 -->
 <div class="page-section fes4-cont">
@@ -413,36 +431,12 @@
                         'description' => 'obsługa wielu języków - rozbudowa strony o kolejne, intuicyjne dodawanie tłumaczeń',
                         'icon' => 'icon-basic-flag1'
                     ),
-                    /*
-                    array
-                    (
-                        'title' => 'systemy platnicze',
-                        'description' => 'integracja systemów PayU, Przelewy24, PayPal, Stripe, Authorize, Sofort',
-                        'icon' => 'icon-ecommerce-dollar'
-                    ),
-                     * 
-                     */
                     array
                     (
                         'title' => 'statystyki',
                         'description' => 'pełna obserwacja informacji dzięki statystykom - wykresy słupkowe, kołowe i dynamiczne',
                         'icon' => 'icon-ecommerce-graph3'
                     ),
-                    /*
-                    array
-                    (
-                        'title' => 'analiza',
-                        'description' => 'narzędzia do analizy przepływu danych i poprawy SEO na witynie m.in google analytics',
-                        'icon' => 'icon-music-shuffle-button'
-                    ),
-                    array
-                    (
-                        'title' => 'serwisy wysylkowe',
-                        'description' => 'integracja usług przewoźniczych, UPS i FedEx, przeliczanie kosztów, planowanie wysyłki',
-                        'icon' => 'icon-basic-compass'
-                    )
-                     * 
-                     */
                 );
             ?>
 
@@ -481,6 +475,8 @@
         </div>
     </div>
 </div>
+    */
+?>
 
 <div class="port-view-more-cont">
     <a class="port-view-more-dark" href="/contact"> <?php echo strtoupper('napisz do mnie'); ?> </a>

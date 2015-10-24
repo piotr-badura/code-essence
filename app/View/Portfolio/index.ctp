@@ -20,7 +20,7 @@
         'websites' => array
         (
             'title' => 'witryny internetowe',
-            'description' => 'Wizytówki i portfolia',            
+            'description' => 'Prezentacje firm, portfolia, blogi',
             'items' => array
             (
                 array
@@ -29,24 +29,22 @@
                 ),                
                 array
                 (
-                    'img' => 'tanie-budowanie.jpg'
+                    'img' => 'new-website.jpg'
                 ),
                 array
                 (
-                    'img' => 'my-portfolio-2.png'
+                    'img' => 'my-portfolio.png'
                 ),                
-                /*
                 array
                 (
-                    'img' => 'domy-w-smolnicy.jpg'
-                ),
-                */                                
+                    'img' => 'tanie-budowanie.jpg'
+                )
             )
         ),
         'ecommerce' => array
         (
             'title' => 'oprogramowanie e-commerce',
-            'description' => 'Wizytówki i portfolia',
+            'description' => 'slepy internetowe i programy partnerskie',
             'items' => array
             (
                 array
@@ -62,6 +60,7 @@
 <div class="p-140-cont">
 
     <?php
+        $i = 0;
         foreach ($portfolios as $portfolio)
         {
     ?>
@@ -82,14 +81,14 @@
             <div class="col-sm-8 col-md-offset-1">
                 <div class="row">
                     
-                    <?php
+                    <?php                        
                         foreach ($portfolio['items'] as $item)
-                        {
+                        {                            
                     ?>                    
                     
                     <!-- ITEM -->
                     <div class="col-md-6 plr-0 lightbox-item">
-                        <a href="#">
+                        <a>
                             <div class="port-img-overlay">
                                 <img class="port-main-img" src="/images/my-portfolio/thumbs/<?php echo $item['img'] ?>" alt="img">
                             </div>
@@ -111,11 +110,22 @@
         </div>
     </div>
 
-    <!-- DIVIDER -->
-    <hr class="mt-0 mb-80">    
+        <?php 
+            if (count($portfolio['items']) > $i)
+            {
+        ?>
+    
+        <!-- DIVIDER -->
+        <hr class="mt-0 mb-80">    
     
     <?php
+            }
+            $i++;
         }
     ?>   
 
+</div>
+
+<div class="port-view-more-cont">
+    <a class="port-view-more-dark" href="/contact"> <?php echo strtoupper('napisz do mnie'); ?> </a>
 </div>
